@@ -14,6 +14,8 @@ for host in nm.all_hosts():
     # Check if the host is up
     if nm[host].state() == "up":
         print("  State: Up")
+	# creates array of all active hosts
+        active_hosts= active_hosts.append(nm[host])
 
         # Iterate over the open ports on the host
         # Added udp in nm[host][]
@@ -21,10 +23,12 @@ for host in nm.all_hosts():
             print(f"  Port: {port}")
             print(f"  State: {nm[host]['tcp'][port]['state']}")
 
-print(nm.csv())
+
+#print(nm.csv())
 #host;protocol;port;name;state;product;extrainfo;reason;version;conf
 
 # Exporting results to .csv. Maybe works???
-with open('nm.csv()', 'w') as f:
-    writer = csv.writer(f)
-    writer.writerow(nm)
+#nm[host] = str(nm[host])
+#with open('nm.csv()', 'w') as f:
+#    writer = csv.writer(f)
+#    writer.writerow(nm)
