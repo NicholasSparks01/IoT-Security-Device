@@ -1,0 +1,11 @@
+Finding out how to implement a firewall sysyem for IoT Devices
+
+
+1. PF: pfSense uses PF (Packet Filter) system, which allows
+	the firewall engine, to monitor and contorl network traffic
+	
+2. Snort: Open-Source intrusion detection and prevention system
+	that can be used to detect and block malicious network traffic
+
+
+3. create a web interface to view current network traffic
