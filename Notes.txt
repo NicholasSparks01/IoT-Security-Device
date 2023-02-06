@@ -1,6 +1,12 @@
-Finding out how to implement a firewall sysyem for IoT Devices
+Next Steps
+----------
+* Use Wireshark and see what typical communication is like
+* Maybe use iperf3 to see what the throughput is like
+* Overall, see what the packets look like when endpoint is in use
 
 
+Implementing Firewall
+---------------------
 1. PF: pfSense uses PF (Packet Filter) system, which allows
 	the firewall engine, to monitor and contorl network traffic
 	
@@ -9,3 +15,9 @@ Finding out how to implement a firewall sysyem for IoT Devices
 
 
 3. create a web interface to view current network traffic
+
+Functional purpose of the firewall
+----------------------------------
+* Segment endpoint entirely? 
+* Allow only IoT endpoints to contact legitimate external IP addresses
+
