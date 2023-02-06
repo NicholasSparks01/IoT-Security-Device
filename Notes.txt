@@ -18,6 +18,7 @@ Implementing Firewall
 
 Functional purpose of the firewall
 ----------------------------------
+* In order to make an endpoint tunnel through another is to segment endpoints using VLAN
+* 
 * Segment endpoint entirely? 
 * Allow only IoT endpoints to contact legitimate external IP addresses
-
