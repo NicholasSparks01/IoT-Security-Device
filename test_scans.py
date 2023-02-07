@@ -8,12 +8,13 @@ active_hosts = []
 
 # Scan the local network for open ports
 nm.scan(hosts='192.168.1.0/24', arguments='-p 8008, 80, 8008, 8883, 8009, 8443, 9000, 10001, 5353, 53')
+
 # Iterate over the scanned hosts
 for host in nm.all_hosts():
         print(f"Host: %s (%s)" % (host, nm[host].hostname()))
 
         # Check if the host is up
-        if nm[host].state() == "up":
+        if nm[host].state() == ("up" or "filtered"):
                 print("  State: Up")
                 # creates array of all active hosts
                 active_hosts.append(nm[host])
