@@ -3,7 +3,7 @@ Next Steps
 * Use Wireshark and see what typical communication is like
 * Maybe use iperf3 to see what the throughput is like
 * Overall, see what the packets look like when endpoint is in use
-
+* Use TCPDump to capture data and analyse it further to locate addresses and hosts
 
 Implementing Firewall
 ---------------------
