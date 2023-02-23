@@ -1,9 +1,9 @@
 import nmap
-import csv
 import random
 
 # Initialize the nmap scanner
 nm = nmap.PortScanner()
+
 active_hosts = []
 
 # Scan the local network for open ports
